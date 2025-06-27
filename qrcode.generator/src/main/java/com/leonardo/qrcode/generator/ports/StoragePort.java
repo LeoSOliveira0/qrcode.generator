@@ -1,5 +1,5 @@
 package com.leonardo.qrcode.generator.ports;
 
-public interface StoragePorts {
+public interface StoragePort {
     String uploadFile(byte[] fileData, String fileName, String contentType);
 }

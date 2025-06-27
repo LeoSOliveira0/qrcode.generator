@@ -1,4 +1,6 @@
 package com.leonardo.qrcode.generator.infrastructure;
 
-public class S3StorageAdapter {
+import com.leonardo.qrcode.generator.ports.StoragePort;
+
+public class S3StorageAdapter implements StoragePort {
 }
