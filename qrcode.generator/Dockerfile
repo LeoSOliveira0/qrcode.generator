@@ -6,3 +6,12 @@ RUN mvn clean package -DskipTests
 
 FROM eclipse-temurin:21.0.2-jre
 WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
+
+ARG AWS_ACCESS_KEY_ID
+ARG AWS_SECRET_ACCESS_KEY
+
+ENV AWS_REGION=us-east-1
+ENV AWS_S3_BUCKET=qrcode-stock
+
+ENTRYPOINT ["java", "-jar", "app.jar"]
