@@ -94,9 +94,6 @@ Visit: `http://localhost:8080`
 
 ---
 
-## 📄 License
-
-Licensed under the [MIT License](LICENSE).
 
 ---
 
