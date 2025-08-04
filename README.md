@@ -1,12 +1,10 @@
 <h1 align="center">📦 QRCode.Generator</h1>
 
 <p align="center">
-  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/LeoSOliveira0/qrcode.generator?style=for-the-badge" />
+  <img alt="Último Commit" src="https://img.shields.io/github/last-commit/LeoSOliveira0/qrcode.generator?style=for-the-badge" />
   <img alt="Java" src="https://img.shields.io/badge/Java-93.3%25-blue?style=for-the-badge&logo=java" />
-  <img alt="Languages" src="https://img.shields.io/github/languages/count/LeoSOliveira0/qrcode.generator?style=for-the-badge" />
+  <img alt="Linguagens" src="https://img.shields.io/github/languages/count/LeoSOliveira0/qrcode.generator?style=for-the-badge" />
 </p>
-
-
 
 <p align="center">
   <img alt="Java" src="https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" />
@@ -17,66 +15,66 @@
 
 ---
 
-## 🚀 Features
+## 🚀 Funcionalidades
 
-- 🧾 Generate QR codes from text or URLs
-- ☁️ Uploads the generated image to Amazon S3
-- 🧼 Clean architecture with domain-driven design
-
----
-
-## 🛠 Technologies
-
-- Java 17
-- Spring Boot 3
-- Maven
-- Amazon S3 (AWS SDK)
-- Docker (optional for deployment)
+- 🧾 Gera códigos QR a partir de texto ou URLs
+- ☁️ Faz upload da imagem gerada para o Amazon S3
+- 🧼 Arquitetura limpa com design orientado ao domínio (DDD)
 
 ---
 
-## 📁 Project Structure
+## 🛠 Tecnologias Utilizadas
+
+- Java 17  
+- Spring Boot 3  
+- Maven  
+- Amazon S3 (AWS SDK)  
+- Docker (opcional para deploy)  
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```
 qrcode.generator/
-├── controller/           # REST controllers
-├── dto/                  # Data Transfer Objects
-├── service/              # Business logic for QR generation
-├── ports/                # Interfaces for abstraction
-├── infrastructure/       # Concrete implementations (e.g., S3 adapter)
-└── Application.java      # Spring Boot entry point
+├── controller/           # Controladores REST
+├── dto/                  # Objetos de Transferência de Dados
+├── service/              # Lógica de negócio para geração de QR Code
+├── ports/                # Interfaces para abstração
+├── infrastructure/       # Implementações concretas (ex.: adaptador S3)
+└── Application.java      # Ponto de entrada do Spring Boot
 ```
 
 ---
 
-## 🔧 Getting Started
+## 🔧 Como Começar
 
-### 1. Clone the repository
+### 1. Clone o repositório
 
 ```bash
 git clone https://github.com/LeoSOliveira0/qrcode.generator.git
 cd qrcode.generator
 ```
 
-### 2. Set up AWS credentials
+### 2. Configure as credenciais da AWS
 
-Make sure to configure your AWS credentials to access an S3 bucket.
+Certifique-se de configurar suas credenciais da AWS para acessar um bucket S3.
 
-### 3. Run the application
+### 3. Execute a aplicação
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Visit: `http://localhost:8080`
+Acesse: `http://localhost:8080`
 
 ---
 
-## 📡 API Usage
+## 📡 Uso da API
 
 ### `POST /api/qrcode/generate`
 
-**Request Example:**
+**Exemplo de Requisição:**
 
 ```json
 {
@@ -84,17 +82,12 @@ Visit: `http://localhost:8080`
 }
 ```
 
-**Response:**
+**Resposta:**
 
 ```json
 {
-  "imageUrl": "https://s3.amazonaws.com/your-bucket-name/qr-code-id.png"
+  "imageUrl": "https://s3.amazonaws.com/seu-nome-do-bucket/qr-code-id.png"
 }
 ```
 
 ---
-
-
----
-
-
